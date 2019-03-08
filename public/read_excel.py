@@ -143,6 +143,7 @@ if __name__ == '__main__':
     #print(type(correlation_keys))
     a =correlation_body(list_from_excel,14,correlation_keys)
     print(a)
+    print('what fuck')
     # for value in correlation_keys:
     #     a  = url_keys.find(value)
     #     print(value,a)
