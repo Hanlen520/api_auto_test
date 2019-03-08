@@ -26,7 +26,7 @@ def request_api(list_from_excel,n=None,m=None):
     :return:
     '''
     correlation_Dict = {}
-    aa =0
+    #aa =0
     for i in range(n,m):
         print(i)
         '''
@@ -53,8 +53,8 @@ def request_api(list_from_excel,n=None,m=None):
         # else:
         #     url_params=None
         '''
-        aa+=1
-        print(aa)
+        #aa+=1
+        #print(aa)
         url_params = read_excel.correlation_keys(list_from_excel,i,correlation_Dict)
         #print('入参:%s,格式：%s' % (url_params, type(url_params)))
 
@@ -67,7 +67,7 @@ def request_api(list_from_excel,n=None,m=None):
         #response = requests.post(url=requests_url,params=url_params,json=json_body)
         resp = API(list_from_excel,i,method=method,url=requests_url,params=url_params,json=json_body)
 
-        print('返回的值：%s'% (resp,))
+        #print('返回的值：%s'% (resp,))
         #提取关联参数
         resp1=resp[1]
         if list_from_excel[i]['关联参数'] != '':
@@ -82,7 +82,7 @@ def request_api(list_from_excel,n=None,m=None):
                     # correlation_keys.append('keys':value)
                     # print('correlation_Dict%s'%correlation_Dict)
                 correlation_Dict[corr[0]] = resp1
-                print('correlation_keys:%s'%correlation_Dict)
+                #print('correlation_keys:%s'%correlation_Dict)
     return resp
     #print(resp)
 

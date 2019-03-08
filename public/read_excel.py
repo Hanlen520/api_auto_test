@@ -109,22 +109,19 @@ def correlation_body(list_data,i,correlation_Dict):
     :param correlation_Dict:
     :return:
     '''
-    url_body = json.loads(list_data[i]['body'])
-    if url_body.find('$') >= 0:
-        url_params_1 = list_data[i]['body']
+    url_body = list_data[i]['body']
+    if url_body != '' and url_body.find('$') >= 0:
+
         for value in correlation_Dict:
-            # print(2)
-            if url_params_1.find(value) > 0:
+            print(value)
+            if url_body.find(value) >= 0:
                 # print(3)
-                url_params_1 = url_params_1.replace(value, str(correlation_Dict[value]))
-                url_params_1 = json.loads(url_params_1)
-                return url_params_1
-            # else:
-            #     url_params_4 = json.loads(list_data[i]['body'])
-            #     return url_params_4
-    elif url_params != '':
-        url_params_3 = json.loads(list_data[i]['body'])
-        return url_params_3
+                url_body = url_body.replace(value, str(correlation_Dict[value]))
+                url_body = json.loads(url_body)
+                return url_body
+
+    elif url_body != '' and url_body.find('$') < 0 :
+        return json.loads(list_data[i]['body'])
     else:
         return
 
@@ -144,15 +141,17 @@ if __name__ == '__main__':
     #url_params={"access_token": "${access_token}", "results": 10, "page": 1}
     correlation_keys = {"${access_token}": "b811dad1-139d-4e5b-980c-650faae93e74","${id}":"75"}
     #print(type(correlation_keys))
-    for value in correlation_keys:
-        a  = url_keys.find(value)
-        print(value,a)
-        #print('find:%s'%a)
-        if url_keys.find(value) >= 0 :
-            url_keys = url_keys.replace(value, str(correlation_keys[value]))
-            print('key:%s'%url_keys)
-        else:
-            print('meiy')
+    a =correlation_body(list_from_excel,14,correlation_keys)
+    print(a)
+    # for value in correlation_keys:
+    #     a  = url_keys.find(value)
+    #     print(value,a)
+    #     #print('find:%s'%a)
+    #     if url_keys.find(value) >= 0 :
+    #         url_keys = url_keys.replace(value, str(correlation_keys[value]))
+    #         print('key:%s'%url_keys)
+    #     else:
+    #         print('meiy')
         #a =json.dumps(json.loads(url_keys),indent=2,ensure_ascii=False)
         #print(a)
 
