@@ -7,7 +7,7 @@ import os
 class E_mail(object):
     def __init__(self,html,attachment):
         '''
-        定义参数/属性
+        定义参数/属性f
         :param html:
         :param attachment:
         '''
