@@ -1,0 +1,15 @@
+Index: public/read_excel.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- public/read_excel.py	(date 1552066658000)
++++ public/read_excel.py	(date 1552067001000)
+@@ -143,6 +143,7 @@
+     #print(type(correlation_keys))
+     a =correlation_body(list_from_excel,14,correlation_keys)
+     print(a)
++    print('what fuck')
+     # for value in correlation_keys:
+     #     a  = url_keys.find(value)
+     #     print(value,a)
