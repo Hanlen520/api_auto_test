@@ -1,0 +1,10 @@
+#存放固定常用的值
+
+
+cont:
+ host:localhost
+ port:3306
+ user:root
+ passwd:199211
+ db:test0310
+ charset:utf8
