@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9af698ef-dcf0-40f1-b788-a06b37a61e93" name="Default Changelist" comment="更新,20190310">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9af698ef-dcf0-40f1-b788-a06b37a61e93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/Send_Email.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+            <state relative-caret-position="162">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
               <folding>
                 <element signature="e#42#54#0" expanded="true" />
               </folding>
@@ -343,7 +343,7 @@
       <workItem from="1551965287461" duration="827000" />
       <workItem from="1551977423851" duration="142000" />
       <workItem from="1552066418970" duration="1400000" />
-      <workItem from="1552125786008" duration="8159000" />
+      <workItem from="1552125786008" duration="8443000" />
     </task>
     <task id="LOCAL-00001" summary="更新">
       <created>1552066658437</created>
@@ -380,7 +380,21 @@
       <option name="project" value="LOCAL" />
       <updated>1552160874028</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="更新,20190310-2">
+      <created>1552161296020</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1552161296020</updated>
+    </task>
+    <task id="LOCAL-00007" summary="更新,20190310">
+      <created>1552161359157</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1552161359157</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -416,7 +430,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130566000" />
+    <option name="totallyTimeSpent" value="130850000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -441,9 +455,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32913166" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32776934" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49920508" visible="true" weight="0.32776934" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007542" side_tool="true" weight="0.28851542" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5007949" side_tool="true" visible="true" weight="0.32776934" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32913166" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32957393" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -531,6 +545,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="更新" />
+    <MESSAGE value="更新,20190310-2" />
     <MESSAGE value="更新,20190310" />
     <option name="LAST_COMMIT_MESSAGE" value="更新,20190310" />
   </component>
@@ -702,8 +717,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/Send_Email.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        <state relative-caret-position="162">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding>
             <element signature="e#42#54#0" expanded="true" />
           </folding>
