@@ -125,7 +125,38 @@ def correlation_body(list_data,i,correlation_Dict):
     else:
         return
 
+def get_corr(tiqu,resp1,correlation_Dict):
 
+    if tiqu.find(',') <=1:
+        corr = tiqu.split('=')
+        value = get_json_value(resp1,corr)
+        correlation_Dict[corr[0]] = value
+        return correlation_Dict
+    else:
+        corr = tiqu.split(',')
+        #print('corr:%s'%corr)
+        for i in range(len(corr)):
+            corr1 = corr[i].split('=')
+            #print('corr1%s'%corr1)
+            value = get_json_value(resp1, corr1)
+            correlation_Dict[corr1[0]] = value
+        if correlation_Dict['${c_token}'].find('_')<0:
+            a =correlation_Dict['${c_token}']
+            b = correlation_Dict['${mid}']
+            correlation_Dict['${c_token}']=str(b)+'_'+a
+            return correlation_Dict
+        else:
+            return correlation_Dict
+
+def get_json_value(json,corr):
+
+    b = corr[1][1:-1].split('][')
+    for key in b:
+        if key in {'0','1','2','3','4','5','6','7','8','9','10'}:
+            key = int(key)
+
+        json = json[key]
+    return json
 
 
 

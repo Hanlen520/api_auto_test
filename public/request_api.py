@@ -72,17 +72,9 @@ def request_api(list_from_excel,n=None,m=None):
         resp1=resp[1]
         if list_from_excel[i]['关联参数'] != '':
             corr = list_from_excel[i]['关联参数'].split('=')
-            #print(corr)
-                # keys = list_from_excel[i]['关联参数'].split('=')
-                # print('截取关联参数key：%s'%corr[1][1:-1].split(']['))
-            for key in corr[1][1:-1].split(']['):
-                #print('key:%s'%key)
-                resp1 = resp1[key]
-                #print('提取参数value值：%s'%resp1)
-                    # correlation_keys.append('keys':value)
-                    # print('correlation_Dict%s'%correlation_Dict)
-                correlation_Dict[corr[0]] = resp1
-                #print('correlation_keys:%s'%correlation_Dict)
+            correlation_Dict = read_excel.get_corr(corr, resp1, correlation_Dict)
+        else:
+            pass
     return resp
     #print(resp)
 
