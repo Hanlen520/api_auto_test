@@ -51,6 +51,11 @@ def sql_check(sql=None,params=None):
 
 
 if __name__ =='__main__':
-    sql ='INSERT INTO states (id, state, population) VALUES (NULL, "Alabama", "4822023");'
-    sql_1 = 'select * from states'
-    sql_check(sql_1)
+    # sql ='INSERT INTO states (id, state, population) VALUES (NULL, "Alabama", "4822023");'
+    # sql_1 = 'select * from states'
+    # sql_check(sql_1)
+
+    a = 20*20+50*16+10*5+50*1#炫豆1300
+    b = 16*3+20+5+50#活跃度123
+    c=28#余额28
+    print(b)
